@@ -1,462 +1,284 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" /> 
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.0.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="css/chiky.min.css" />
 
-        <title>Panel Ejemplo</title>
-		
-		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.2.min.css">
-		<style>
-			#abre_panel{
-				position: absolute;
-				background-image: url(img/menu_btn.png);
-				background-repeat: no-repeat;
-				width: 50px;
-				height: 20px;
-				box-shadow: none;
-				background-color: transparent !important;
-				border: none;
-				left: -5px;
-				top: 0;
-				margin-top: 6px !important;
-			}
-			.header{
-				color: white !important;
-				background-color:darkgreen !important; 
-				text-shadow:none !important;
-			}
-			#panel, .panel_li{
-				background-color: grey !important;
-				text-shadow:none !important;
-				color: white !important;
-			
-                                #titulo{
-                                    background-color: green;
-                                }
-                        }
-		</style>
+<script src="js/jquery-1.6.4.min.js"></script>
+<script src="js/jquery.mobile-1.0.min.js"></script>
+<script type="text/javascript">
 
-		<script src="jquery/jquery-1.11.0.min.js"></script>
-		<script src="jquery/jquery.mobile-1.4.2.min.js"></script>
-		<script type="text/javascript">
-				
-			$(document).ready(function(e) {	
-				
-				$("div:jqmData(role='panel')").css('margin-top',  ($("div:jqmData(role='header')").height()));
-					
-			});
-				
-	
-		</script>
-    </head>
-	<body>	
 
-<!--######################################## INICIO ########################################-->	
-<div data-role="page" id="prin">
-	<div data-role="header" class="header" data-position="fixed">
-		<h1>Panel</h1>
-		<a href="#panel" id="abre_panel" class="panel-btn"></a>
-	</div>
-	
-	<div data-role="panel" id="panel" data-position-fixed="true" data-position="left" data-display="overlay">
-		<ul data-role="listview">
-			<li data-icon="false"><a href="#b" class="panel_li"	>Capitulo1</a></li>
-			<li data-icon="false"><a href="#c" class="panel_li"	>Capitulo2</a></li>
-			<li data-icon="false"><a href="#d" class="panel_li"	>Capitulo3</a></li>
-			<li data-icon="false"><a href="#e" class="panel_li"	>Capitulo4</a></li>
-			<li data-icon="false"><a href="#f" class="panel_li"	>Capitulo5</a></li>
-		</ul>
-	</div>
+</script>
+   
 
-	<div data-role="content">
-            <h1 align="center" id="titulo"> Como protegerse de virus y otras amenazas de la Web.</h1>
- <h1 align="reft" id="titulo"> ¿Cómo se puede proteger un equipo de los virus?.</h1>
-    <h1 align="center" id="titulo"> Como protegerse de virus y otras amenazas de la Web.</h1><br><br>
-           En sus comienzos, internet se utilizaba básicamente para buscar información y emitir/recibir mensajes por e-mail. Luego comenzó a popularizarse el uso de los blogs personales, la posibilidad de pagar las cuentas por medio de internet o subir fotos e información personal en Facebook.
-Estos datos cargados/publicados quedan circulando en un mundo virtual y la posibilidad de que sean utilizados por malas aplicaciones está siempre latente.
-Existen muchas herramientas que ayudan a evitar este tipo de inconvenientes, como antivirus, firewalls, filtros y contraseñas. En internet, como en el resto de la vida cotidiana, existen riesgos y diversas maneras de prevenirnos y actuar con responsabilidad frente a las amenazas. Para saber de qué se trata y actuar en consecuencia, les acercamos información sobre estos y otros fenómenos existentes en la Web.
-  <br><br>          <h1 align="reft" id="titulo"> Formas seguras de Navegar en la red.</h1><br>
- 
- 1. COMPRA ONLINE CON PRECAUCIONES<br><br>
+<style>
+body {
+    background-color: lightblue;
+}
 
-Cuando realices alguna compra a través de Internet, asegúrate de que la url del sitio coincide con la web donde crees estar y que su dirección empieza por https. No olvides revisar su política de privacidad.<br>
-<br>
-2. MANTÉN ACTUALIZADO TU ANTIVIRUS<br><br>
+h1 {
+    color: white;
+    text-align: center;
+}
 
-Android, Windows, Mac… Cuando navegues por Internet es fundamental tener tu dispositivo seguro y actualizado. Existe malware especializado para  cada uno de ellos, por eso, contar con un programa antivirus es esencial para proteger tu identidad online y la de tu familia.
-<br><br>
-3. UTILIZA UNA RED WI-FI CONOCIDA<br><br>
-<br><br>
-Para todos es muy cómodo conectarse a redes de bares, centros comerciales o tiendas pero tenemos que tener en cuenta que  suelen ser poco seguras. Los paquetes de información transmitidos a través de las conexiones públicas pueden ser capturados fácilmente por hackers o ciberdelincuentes.
-<br><br>
-4. PRESTA ATENCIÓN A TU BANDEJA DE ENTRADA<br><br>
-<br><br>
-Cuando nos llega un email de una fuente desconocida, debemos evitar pinchar en los enlaces o documentos adjuntos. Asimismo, no debemos responder a esos correos facilitando datos personales y claves de acceso a diferentes cuentas.
-<br><br>
-5. INFORMA A LOS NIÑOS
-<br><br>
-Los niños utilizan smartphones y tablets con la misma facilidad que los adultos y eso es bueno, siempre y cuando sepan lo que no deben hacer y, sobre todo, es muy importante que los mayores tengan un control sobre su actividad online.
-<br><br>
-6. CUIDA EL ‘INTERNET DE LAS COSAS’
+p {
+    font-family: Times New Roman;
+    font-size: 20px;
+  font-style: italic;
+}
 
-Son muchos los aparatos del hogar conectados a Internet: televisiones, microondas, sistemas de seguridad… Lo mejor que puedes hacer es mantener el sistema operativo actualizado.
 
-Y recordad que estos consejos hay que ponerlos en práctica todos los días del año, no solo hoy<br>
- 
- 
+ #content{
+                background-image:url(img/textura-brillante-azul-del-metal-1606793.jpg);
+                /* background-size: 100% 100%;
+                 -moz-background-size: 100% 100%;*/
+                width: auto;
+                height: 800px;
+            }
+
+
+
+
+
+</style>
+
+
+
+
+
+
+<body>
+
+
+<div data-role="page" id="principal" >
+	<div data-role="header" data-theme="b">
+	<h3>VILLA EL CARMEN TEQUEXQUITLA</h3>
+  
+    </div>
+  
+   
+   <div data-role="content"  id="content">
+<marquee><h1 style="color:#FFFFFF"; >Bienvenido</h1></marquee>
+ 	
+
+ <a href="#Opciones" data-role="button" data-transition="slideup">Entrar</a>
 
 	</div>
 </div>
-<!--#################### PAGE ####################-->
-<div data-role="page" id="b">
-    <div data-role="header" class="header" data-position="fixed">
-		<h1>Capitulo Proteccion de datos personales</h1> <h3><a href="#prin" data-role="button" data-mini="true">regresar</a></h3>
-		<a href="#panel" id="abre_panel" class="panel-btn"></a>
-	</div>
-	
-	<div data-role="panel" id="panel" data-position-fixed="true" data-position="left" data-display="overlay">
-		<ul data-role="listview">
-			<li data-icon="false"><a href="#b" class="panel_li"	>Capitulo1</a></li>
-			<li data-icon="false"><a href="#c" class="panel_li"	>Capitulo2</a></li>
-			<li data-icon="false"><a href="#d" class="panel_li"	>Capitulo3</a></li>
-			<li data-icon="false"><a href="#e" class="panel_li"	>Capitulo4</a></li>
-			<li data-icon="false"><a href="#f" class="panel_li"	>Capitulo5</a></li>
-		</ul>
-	</div>
-      <div data-role="content" id="content" ><br><br>
-          <h1 align="center" id="titulo"> Proteccion de los datos.</h1> <br><br>
-          El nombre y apellido; el número del INE.; las huellas dactilares, una fotografía,  información sobre la salud,  las creencias, los gustos,  entre otros, constituyen la base de nuestros datos personales. 
-          <br><br>Aquí les contamos sobre los derechos de los usuarios al respecto y por qué un tercero no puede utilizarlos arbitrariamente.<br><br>
-Los datos personales permiten identificarnos como individuos únicos y singulares; son usados en situaciones específicas y  tienen que ser solicitados con alguna justificación.
-<br><br>Habitualmente en internet los chicos quieren completar algunos formularios por distintas razones: para abrir una cuenta de e-mail, jugar un juego o adquirir algún producto. Los sitios deben hacerse responsables de que estos datos no se filtren con otros fines.
-<br><br>Los chicos y chicas tienen que ser conscientes de que ellos son dueños de sus datos personales y que no están obligados a facilitarlos. Ningún  tercero puede exigir los datos personales a un menor, y en caso de requerirlo debe justificar el motivo.
-<br><br>Los chicos y chicas nunca deben completar estos formularios solos, siempre debe haber un adulto que controle qué tipos de datos se solicitan y verificar qué utilización tendrán los mismos.
- <br><br>      La Ley Federal de Protección de Datos Personales en Posesión de Particulares (LFPDPPP), es un cuerpo normativo de México, aprobado por el Congreso de la Unión el 27 de abril de 2010, mismo que tiene como objetivo regular el derecho a la autodeterminación informativa. Esta Ley fue publicada el 5 de julio de 2010 en el Diario Oficial de la Federación y entró en vigor el 6 de julio de 2010. Sus disposiciones son aplicables a todas las personas físicas o morales que lleven a cabo el tratamiento de datos personales en el ejercicio de sus actividades, por lo tanto empresas como bancos, aseguradoras, hospitales, escuelas, compañías de telecomunicaciones, asociaciones religiosas, y profesionistas como abogados, médicos, entre otros, se encuentran obligados a cumplir con lo que establece esta ley. LFPD Ley Federal de Proteccion de Datos.
 
-       Un dato personal, de acuerdo al artículo 3 fracción V de la Ley es toda aquella información que permita identificar a una persona<br><br>
-       
-       <div align="center"><img src="images/1.png"></div><br>
-       
-       Aviso de Privacidad<br><br>
-El aviso de privacidad es un texto en el cual se explica el uso que se le dará los datos al titular de los mismos, y se genera en forma impresa o electrónica (aparece como una liga en una página Web). La ley y su reglamento mencionan en varios de sus artículos la forma que tendrá este aviso de privacidad. En forma adicional, el 17 de enero de 2013 la Secretaría de Economía publicó en el Diario Oficial8 de la Federación los lineamientos para la generación del Aviso de Privacidad, a efectos de minimizar la necesidad de que se deba recurrir a empresas privadas para obtener asesoramiento en su creación. En dicha publicación se diferencian tres formas del Aviso de Privacidad: Integral, Simplificado y Corto, según su aplicación
+  
+ <div data-role="page" id="Opciones">
+	<div data-role="header" data-theme="b">
+	<h3>Opciones</h3>
+	<a href="#principal" data-role="button" data-transition="slidedown">Atras</a>
+	</div>
+    
+  <div data-role="content">
+  <a href="#dat" data-role="button" data-transition="slideup">UBICACION</a>
+  <a href="#prin" data-role="button" data-transition="slideup">LUGARES TURISTICOS</a>
+  <a href="#prin1" data-role="button" data-transition="slideup">CULTURA</a>
+  <a href="#prin2" data-role="button" data-transition="slideup">COSTUMBRES</a>
+  <a href="#prin3" data-role="button" data-transition="slideup">COMIDA TIPICA</a>
+
+    </div>
+    </div>
+    
+<div data-role="page" id="dat">
+	<div data-role="header" data-theme="b">
+	<marquee><h3>UBICACION</h3></marquee>
+	<a href="#Opciones" data-role="button" data-transition="slidedown">Atras</a>
+        </div>
+    <div data-role="content">
+
+    <p>El municipio de El Carmen Tequexquitla observa, como una de sus características distintivas, es el que se reconozca que durante la mayor parte de la época prehispánica estuvo habitualmente desocupado y que dentro de dicho contexto histórico cultural, adquiere relevancia con el establecimiento del llamado "Corredor Teotihuacano" -ruta comercial por excelencia de los teotihuacanos al golfo-.
+<BR><BR>
+
+El Carmen Tequexquitla es uno de los 60 municipios que constituyen el estado mexicano de Tlaxcala. Se encuentra localizado al este del estado y aproximadamente 63 kilómetros al este de la ciudad de Tlaxcala de Xicohténcatl. Cuenta con una extensión territorial de 45,480 km². Según el II Conteo de Población y Vivienda de 2010, el municipio tiene 15,368 habitantes, de los cuales 7,527 son hombres y 7,841 son mujeres.2 La palabra Tequexquitla proviene del náhuatl y se interpreta como: "Lugar de Tequezquite o Tequezquital"
+
+<BR><BR>
+El Carmen Tequexquitla se localiza al oeste del estado entre las coordenadas geográficas 19° 19' de latitud norte, y 97° 39' de longitud oeste; a una altura promedio de 2,380 metros sobre el nivel del mar.
+
+El municipio colinda al norte, sur y este con el estado de Puebla y al oeste con el municipio de Cuapiaxtla.
+<div align="center"><img src="img/29m007.jpg.gif"></div><br>
+</p>
+
+</div>
+</div>
+
+<div data-role="page" id="prin" >
+	<div data-role="header" data-theme="b">
+	<marquee><h3>LUGARES TURISTICOS</h3></marquee>
+<a href="#Opciones" data-role="button" data-transition="slidedown">Atras</a>
+    </div>
+    <div data-role="content">
+  
+<p>Lugares históricos y mágicos.
+
+En la comunidad no hay muchos lugares turísticos e históricos sin en cambio lo existentes tienen un símbolo muy significativo para los pobladores.
+<BR><BR>
+<b>Iglesia de nuestra señora del Carmen:</b> esta Iglesia es un icono de la población ya que en ella se alberga la imagen de la Virgen del Carmen la patrona de la comunidad, a ella se le debe en parte el origen del nombre de la comunidad. Fue construida desde que la comunidad era únicamente una hacienda y se adorna y pinta de colores muy llamativos desde ya hace muchos años.
+
+<div align="center"><img src="img/descarga.jpg"></div><br>
+<BR><BR>
+
+<p><b>Iglesia de la campana:</b> a pesar de que esta iglesia aún no está terminada por completo en ella se realizan eventos religiosos de mucho renombre está construida en su mayoría de piedra y por su forma (de cruz) con un cristo en la cúpula, y su ubicación (arriba del cerro) es visible desde diferentes puntos de la población siendo un icono de la misma.
+
+<div align="center"><img src="img/Iglesia_de_la_Campana,_El_Carmen_Tequexquitla,_Tlaxcala.jpg"></div><br>
+<BR><BR>
+<p><b>La casas de la cultura:</b> este estructura a pesar de ser de resientes fechas se ha convertido en un lugar muy vistoso debido a su ubicación y diseño, en él se realizan actividades culturales, también es conocido como el mirador ya que por la altitud en que se encuentra se puede tener una vista muy amplia de la comunidad en su zona noroeste (colonia mazatepec).
+<p/>
+<div align="center"><img src="img/29m007-01.jpg"></div><br>
+<BR><BR>
+<p><b>El río de Totolcingo:</b> en este lugar hay un nacimiento de agua potable que emerge en las faldas del cerro de Totolcingo al ser una fuente natural se utiliza para consumo humano y al fluir de ahí hasta la laguna es idóneo para algunos bañistas, además de que en la zona se han construido albercas y apalapas; un lugar idóneo para un día de campo.
+<p/>
+<div align="center"><img src="img/45711566.jpg"></div><br>
+<BR><BR>
+<p><b>Los muedanos:</b> es una zona arenosa conformada por las corrientes de aire y el arena arrastrada del rio, en él se realizan durante el periodo de feria eventos deportivos como voleibol playero, futbol playero.
+<p/>
+<div align="center"><img src="img/2252ea86cdc6d1a05a969a7e9aedfb63.jpg"></div><br>
+<BR><BR>
+<p><b>El monte o piñonal:</b> Este lugar es conocido así por sus árboles que dan piñones y en su temporada la gente suele visitarlo para llevar piñones a su casa, algunas personas van a leñar.
+<p/>
+<div align="center"><img src="img/Cerro Verde Yucucuy Pueblos Antiguos.jpg"></div><br>
+<p/>
+</p>
+
+	</div>
+</div>
+
+<div data-role="page" id="prin1" >
+	<div data-role="header" data-theme="b">
+	<marquee><h3>CULTURA</h3></marquee>
+   <a href="#Opciones" data-role="button" data-transition="slidedown">Atras</a>
+</div>
+    <div data-role="content">
+<p>
+ En la actualidad las actividades son muy diversas pero culturalmente hablando se realizan las siguientes:
+<BR><BR>
+<b>Ir al campo:</b> es una actividad que se realiza con mucha frecuencia ya que representa una actividad económica para algunas personas que van a sus tierras a sembrar, cosecha, barbechar o simplemente a “darle vuelta” y aprovechar para traer algunos insumos para sus casa como leña, romeritos, palmas, habas, etc.
+<div align="center"><img src="img/campos-415px.jpg"></div><br>
+<BR><BR>
+<p><b>Moler:</b> consiste en realizar tortillas de maíz a mano o con prensa en cocinas rusticas que tienen en casa o en un fogón.
+<p/>
+<div align="center"><img src="img/piedra-de-moler-el-salvador.jpg"></div><br>
+<BR><BR>
+<p><b>Ir a los piñones:</b> esto únicamente se realiza en la temporada de piñones donde algunos habitantes van al “piñonal” por piñones.
+<p/>
+<div align="center"><img src="img/índice--.jpg"></div><br>
+<BR><BR>
+<p><b>Ir a cuidar:</b> Algunos pobladores llevan a pastar a su ganado a las llanuras ubicadas en la parte noroeste de la población conocido como “el llano”.ç
+<p/>
+<div align="center"><img src="img/33_00002445_1.jpg"></div><br>
+<BR><BR>
+<p><b>Ir a los Riegos:</b> Los pobladores que tienen terrenos en “el llano” conocidas como melgas, van a recolectar y sembrar tequexquite. Las melgas son extensiones de terreno el deslieve que llenan de agua y cando seca se forma el tequexquite el cual cosechan levantando la cascara que se forma, este producto lo venden.
+<p/>
+<div align="center"><img src="img/603524-loma-verde-riegos-aspersores-de-riego-en-campo.jpg"></div><br>
+</p>
+
+	</div>
+</div>
+________________
+
+<div data-role="page" id="prin2" >
+	<div data-role="header" data-theme="b">
+	<marquee><h3>COSTUMBRES</h3></marquee>
+ <a href="#Opciones" data-role="button" data-transition="slidedown">Atras</a>
+    </div>
+    <div data-role="content">
+
+<p id="g">Fiestas, Danzas y Tradiciones.
+
+Tradiciones y costumbres
+
+Sus tradiciones y costumbres se centran principalmente en cuestiones religiosas, además de las que se han heredado de generaciones pasadas, sin en cambio algunas han sido adoptadas de otras regiones debido a la migración constante de sus pobladores, dentro de las más importantes destacan las siguientes:<BR>
+<BR><BR>
+• <b>Feria de El Carmen Tequexquitla<BR>
+• Semana Santa<BR>
+• Celebración de La Navidad y Año Nuevo<BR>
+• Día de muertos<BR>
+• Carnaval</b><BR>
+<BR><BR>
+
+<b>Feria de El Carmen Tequexquitla</b><BR>
+La Feria del Carmen Tequexquitla se realiza en honor a la Virgen del Carmen el día 16 de Julio, se extiende generalmente por una semana donde se realizan principales actividades la mayoría de orden Religiosos, por otra parte por parte del Ayuntamiento también se realizan actividades como la coronación de la Reina, actividades deportivas, muestras gastronómicas, desfiles. También se realiza el Baile de Feria generalmente organizado por Empresas Particulares.
+<div align="center"><img src="img/hnyh.jpg"></div><br>
+<BR><BR>
+<p><b>Semana santa</b><BR></p>
+<p>La semana santa tiene un enfoque Religioso y es una de las fechas más importantes para la comunidad después de la feria. se celebra durante los meses de abril o Marzo según correspondan las fechas, en ella se hace una representación de la vida de cristo , su muerte y resurrección, mediante una obra que dura varios días.
+Se acostumbra también festejar el Sábado de Gloria en “El rio” de Totolcingo. En donde celebran con comida, música, deportes y mojándose en las albercas.
+<p/>
+<div align="center"><img src="img/fgf.jpg"></div><br>
+<BR><BR>
+<p><b>Celebración de las fiestas Navideñas y Año nuevo</b>
+A partir del 16 de Diciembre hasta el día 23 se celebran por la noche las tradicionales posadas en las calles principales de la comunidad (Cuahutemos, Aldama, Perlas de Oriente, entre otras) en las cuales los vecinos se organizan y realizan tamales, colaciones, ponche, buñuelos y los repartes a los asistentes después de que se haya celebrado la representación del nacimiento de cristo. A finales de año se acostumbra celebrar el 24 de diciembre por la noche con una cena donde se reúnen las familias con comidas típicas como tamales, mole, pavo, barbacoa u otras comidas típicas. En ocasiones se rompen piñatas y se toma ponche, al finalizar el año el 31 de diciembre se celebra por la noche una cena para despedir el año viejo y comenzar uno nuevo para lo en la cual se preparan alimentos similares a los del día 24 además de comer uvas para pedir deseos, en ocasiones utilizan ropa de color rojo para suerte en el amor y amarilla para el dinero, algunos hacen maletas y salen corriendo para que tengan viajes durante el año que se avecina. También suele quemarse un muñeco que representa al año viejo para despedirlo. Hay pirotecnia y música.
+<p/>
+<div align="center"><img src="img/Tlalcualpan-Tlaxcala.jpg"></div><br>
+<BR><BR>
+<p><b>Día de muertos</b>
+En estas fechas durante el 28 de octubre y 1,2 de Noviembre se celebra a los Fieles Difuntos mediante la celebración de misas religiosas y ofrendas donde se colocan los alimentos que fueron del agrado de los difuntos, también se pide Halloween, tradición optada por otros lugares, y cada vez en menos medida se acostumbraba pedir calavera. Las casas se adornan con calabazas, calaveras, vampiros, telarañas…
+<p/>
+<div align="center"><img src="img/ghrtjtyj.jpg"></div><br>
+<BR><BR>
+<p><b>Carnaval</b>
+Generalmente se realizan eventos de carnaval bailables y desfiles por las principales calles de la comunidad, con disfraces y carros alegóricos. Una del as danzas muy conocidas y originarias de la región es el baile de los negritos.
+<p/>
+<BR>
+<p>En el Estado de Tlaxcala las danzas y la música típica tradicional, se relaciona primordialmente con las festividades religiosas paganas y con las festividades del carnaval. Ambas son parte de la identidad comunitaria e histórica del pueblo tlaxcalteca.
+
+La música y las danzas se heredan de una generación a otra ya sea como danzante o como interprete, aunque los que participan directamente son realmente grupos reducidos de personas, una gran parte de la población de cada comunidad participa tradicionalmente como espectador o colateralmente en la organización y preparación de los festejos.
+
+En la comunidad de El Carmen la danza ocupa un lugar importante por su alto sentido socio-religioso y socio-cultural. Entre las principales danzas se encuentra la danza de los Negritos, la danza de los segadores presentada en el reciente Congreso Nacional de Danza. Existen además las danzas de los monarcas, los tocotines y los inditos. La música se crea con la solo utilización de un violín, los sones que tradicionalmente se ejecutan llevan el nombre del corte de la danza que se está ejecutando, así se hallan nombres como "el saludo", "la presentación", "la promesa", "son cruzado", "la cadena", "punteando", "la cruz", "respaldeado", "pespunteado", "media vuelta", "vuelta entera", entre otros
+
+El 16 de julio se celebra a la patrona del pueblo que es la Virgen del Carmen. El 15 de julio para amanecer el 16, se lleva a cabo una gran procesión con Danzas, alfombras de frutas y semillas, así como tapetes de aserrín y flores. El remate de feria se realiza el domingo posterior al 16 de julio, si cae entre semana. Se sueltan toros bravos por el centro del poblado, evento conocido como encierro de toros estilo Huamantla.
+<p/>
+<div align="center"><img src="img/San-Pedro-Tlalculpan-Chiautempan.jpg"></div><br>
+   </p>
+	</div>
+</div>
+
+<div data-role="page" id="prin3" >
+	<div data-role="header" data-theme="b">
+	<marquee><h3>COMIDA TIPICA</h3></marquee>
+<a href="#Opciones" data-role="button" data-transition="slidedown">Atras</a>
+    </div>
+    <div data-role="content">
+    
+<p><b>Platillos típicos.</b>
+ La gastronomía de la comunidad es muy variada actualmente se encuentra influenciada por el extranjero y comunidades aledañas sin en cambio aún se conservan muchos alimentos típicos, elaborados en su mayoría por productos de la región.
+<div align="center"><img src="img/fchtyjkuy.jpg"></div><br>
 <br><br>
+<p><b>Los platillos típicos son:</b> los romeritos, el mole, la barbacoa, los tlatoyos, enchiladas, las picadas o gorditas, los frijoles, los ayocotes, las habas secas y verdes los nopalitos, los nopalollos, el chilposo, pollo y guajolote casero, las tortillas de mano.
+<p/>
+<div align="center"><img src="img/images.jpg"></div><br>
+<br><br>
+<p><b>Las bebidas típicas son:</b> Pulque, el agua miel, el atole de masa, el agua de frutas de temporada.
+<p/>
+<div align="center"><img src="img/pulque_hidalgo.jpg"></div><br>
+<br><br>
+<p><b>El Atole.</b>
+El atole, del náhuatl atolli que quiere decir “aguado”, es una bebida de origen prehispánico que acompaña los desayunos de muchos mexicanos. Antiguamente, esta bebida la preparaban los aztecas hirviendo masa de maíz y condimentándola con cacao, chiles y miel de abeja; no fue sino hasta la llegada de los españoles que se le añadió leche o agua, así como piloncillo, para darle una consistencia espumosa.
 
-     <div align="center"><img src="images/2.png"></div><br>  
-       
-    
+Desde entonces el atole se convirtió en la bebida exquisita que acompaña a nuestro tamal, torta, pan dulce o bolillo, entre otros, e inclusive nos calienta las manos en esta épocas tan friolenta.
+<p/>
+ <div align="center"><img src="img/timthumb.php_.png"></div><br>
+</p>
 
-     </div>
-           <div data-role="footer">
-                 
-           </div>
-     </div>
-<!--#################### PAGE ####################-->
-<div data-role="page" id="c">
-    <div data-role="header" class="header" data-position="fixed">
-		<h1>Capitulo Mensajes Engañosos</h1><h3><a href="#prin" data-role="button" data-mini="true">regresar</a></h3>
-		<a href="#panel" id="abre_panel" class="panel-btn"></a>
 	</div>
-	
-	<div data-role="panel" id="panel" data-position-fixed="true" data-position="left" data-display="overlay">
-		<ul data-role="listview">
-			<li data-icon="false"><a href="#b" class="panel_li"	>Capitulo1</a></li>
-			<li data-icon="false"><a href="#c" class="panel_li"	>Capitulo2</a></li>
-			<li data-icon="false"><a href="#d" class="panel_li"	>Capitulo3</a></li>
-			<li data-icon="false"><a href="#e" class="panel_li"	>Capitulo4</a></li>
-			<li data-icon="false"><a href="#f" class="panel_li"	>Capitulo5</a></li>
-		</ul>
-	</div>
-      <div data-role="content" id="content" >
-        <h3>Tema 2: Mensajes engañosos</h3>
-<p>La palabra <em><a >phishing</a></em> (del inglés fish: pescar) consiste en una forma de engaño mediante la cual se envía un mensaje que funciona como un anzuelo a una o varias personas, intentando convencerlas para que revelen sus datos personales. Luego, la información recolectada suele utilizarse para diversas acciones fraudulentas o delictivas.</p>
 
-        <p>Es frecuente que lleguen a la cuenta de correo electrónico e-mails de desconocidos que solicitan ciertos datos para ganarse un premio. El modo de difusión más utilizado para realizar un ataque de <em>phishing</em> suele ser el correo electrónico. Estos correos suelen ser muy convincentes y simulan haber sido enviados por una entidad conocida y confiable. En los mensajes suelen alegarse motivos creíbles y a continuación se solicita ingresar a un sitio Web para modificar o verificar una serie de datos personales.</p>
+</div>
 
-        <p>Los chicos y chicas e incluso los adultos- que navegan en internet pueden caer ante los mensajes-anzuelo y ser pescados. Confiados, suelen&nbsp;cargar sus datos, corriendo el riesgo de que sean usados en algún momento por un tercero con malas intenciones.</p>
 
-        <p>Es responsabilidad de los padres advertir a sus hijos sobre este tipo de correo para que eviten publicar datos personales. Dependiendo de su edad el joven podrá comprender la seriedad del problema y darse cuenta de cuándo no es conveniente subir ciertos datos a la red.</p>
+</div>
+</div>
 
-        <p><strong>Más sobre el phishing</strong></p>
-        <p>Detrás de estos <a>enlaces</a> que parecen prometer entretenimiento o premios hay un sitio falsificado (aunque a veces sean similares, o incluso idénticos, a los de páginas Web confiables). Asimismo, estos sitios tienen direcciones Web que pueden confundir al usuario desprevenido por su parecido con las direcciones Web de cualidades prestigiosas En la mayoría de los casos, el texto del enlace escrito en el correo electrónico es la dirección real del sitio Web. Sin embargo, si el usuario hace clic sobre ese enlace, se lo redirige a otra página falsa.</p>
 
-        <p>También existen casos donde el usuario recibe un mensaje <a>SMS</a> en su teléfono celular, o una llamada telefónica, en la que mediante técnicas similares se intenta convencerlo para que llame a un número de teléfono indicado en el mensaje. Al llamar a ese número, un sistema automatizado -haciéndose pasar por un organismo verdadero- suele solicitarle sus datos personales, que luego serán utilizados sin su autorización.</p>
 
-        <p><strong>Algunas medidas preventivas contra el phishing, para padres e hijos</strong></p><br><br>
-         <div align="center"><img src="images/descarga.jpg"></div><br>
 
-        <ul>
-                <li>Si recibe un correo electrónico solicitando información personal, no respondas. Si el mensaje te invita a acceder a un sitio Web a través de un enlace incluido en su contenido, no lo hagas. Las organizaciones que trabajan seriamente están al tanto de este tipo de actividades y por lo tanto no solicitan información sensible por correo electrónico. Tampoco te contactan por teléfono, ni mediante mensajes SMS o por fax.</li>
 
-                <li>No envíes información personal usando mensajes de correo electrónico. El correo electrónico, si no se utilizan técnicas de cifrado y/o firma digital, no es un medio seguro para enviar información personal o confidencial.</li>
-
-                <li>Evitá ingresar a sitios Web de entidades financieras, comercio electrónico, o a brindar datos personales desde un cíber, locutorio u otros lugares públicos. Las computadoras instaladas en estos lugares podrían contener hardware o programas maliciosos destinados a capturar tus datos personales.</li>
-
-                <li>Verificá los indicadores de seguridad del sitio Web donde vas a ingresar información personal. Si es indispensable realizar un trámite o proveer información personal a una organización por medio de su sitio Web, escribí la dirección Web por tu cuenta en el navegador y buscá los indicadores de seguridad del sitio.</li>
-
-<li>Al acceder al sitio Web, deberás notar que la dirección Web comienza con <a>https</a>://, donde la s indica que la transmisión de información es segura. Verificá también que en la parte inferior de tu navegador aparezca la imagen de un candado cerrado.</li>
-
-                <li>Hay que mantener actualizado el <a >software</a> de la computadora. Instalá las actualizaciones de seguridad de tu sistema operativo y de todas las aplicaciones que utilizás, especialmente el programa antivirus. La mayoría de los sistemas actuales permiten configurar estas actualizaciones en forma automática.</li>
-
-                <li>No descargues ni abras archivos de fuentes no confiables. Estos archivos pueden tener programas maliciosos que podrían permitir a un tercero acceder a tu computadora y, por lo tanto, a toda la información que tengas almacenada.</li>
-        </ul>
-
-        <p>En los últimos tiempos, y junto con la proliferacion de las redes sociales, los blogs, los fotologs y los dispositivos de chateo, mucha información que antes circulaba en pequeños círculos íntimos cobró nuevas dimensiones. Consciente o inconscientemente, muchos adultos, jóvenes y niños hacen públicos todo tipo de datos personales, que pueden ser objeto de captura y reutilizados con diversos fines.</p>
- <div align="center"><img src="images/3.jpg"></div><br>
-       
-       
-    
-
-     </div>
-           <div data-role="footer">
-                 
-           </div>
-     </div>
-<!--#################### PAGE ####################-->
-<div data-role="page" id="d">
-    <div data-role="header" class="header" data-position="fixed">
-		<h1>Capitulo Amenasas en la web</h1><h3><a href="#prin" data-role="button" data-mini="true">regresar</a></h3>
-		<a href="#panel" id="abre_panel" class="panel-btn"></a>
-	</div>
-	
-	<div data-role="panel" id="panel" data-position-fixed="true" data-position="left" data-display="overlay">
-		<ul data-role="listview">
-			<li data-icon="false"><a href="#b" class="panel_li"	>Capitulo1</a></li>
-			<li data-icon="false"><a href="#c" class="panel_li"	>Capitulo2</a></li>
-			<li data-icon="false"><a href="#d" class="panel_li"	>Capitulo3</a></li>
-			<li data-icon="false"><a href="#e" class="panel_li"	>Capitulo4</a></li>
-			<li data-icon="false"><a href="#f" class="panel_li"	>Capitulo5</a></li>
-		</ul>
-	</div>
-      <div data-role="content" id="content" >
-         <h3>Tema 3:&nbsp;Amenazas en la Web</h3>
-
-        <p>Las palabras <a>virus</a>, antivirus y <a>troyanos</a> se oyen con frecuencia. Lo mismo sucede con programas maliciosos, el <a>spam</a> y los engaños fraudulentos. Todo suena amenazante y peligroso. Pero existen formas de enfrentarse a este tipo de situaciones sin dejar de utilizar los beneficios de la Web.</p>
-
-        <p>Los programas maliciosos</p>
-
-        <p>Un <strong>código o programa malicioso</strong> (<a>malware</a>) consiste en un programa de computadora escrito para producir inconvenientes, destrucción y/o quebrantar la seguridad de un equipo o sistema informático.</p>
-        <br><br> <div align="center"><img src="images/4.jpg"></div><br>
-        <p>Se diferencian en:</p>
-
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Virus</strong>: para activarse en la computadora, suelen requerir de alguna interacción por parte del usuario (por ejemplo, abrir un archivo adjunto que recibimos por correo electrónico). Hoy también existen virus que afectan los teléfonos celulares, como Cabir (que se desplaza a través del bluetooth y que permite sustraer mensajes, contactos y escuchar conversaciones, entre otros).</p>
-
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Caballos de Troya o troyanos</strong>: son programas que tienen una funcionalidad conocida (por ejemplo, un juego) pero además tienen una función oculta (como capturar las claves que escribe el usuario y mandarlas en un mensaje de correo electrónico a otra persona).</p>
-
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a >Gusanos</a></strong>: se reproducen sin necesidad de interacción de los usuarios, por ejemplo atacando servicios de red vulnerables.</p>
-
-        <p>Estas tres variantes suelen ser las que más atacan a las máquinas, y en general los chicos están al tanto. Pero a veces la tentación de abrir un archivo o bajar algo de internet produce la activación de este tipo de programas maliciosos, que requieren la intervención de un técnico para arreglar el daño que hayan provocado.</p>
-
-        <p><strong>Algunas consecuencias que pueden generar los programas maliciosos:</strong></p>
-
-        <ul>
-                <li>Borrar archivos del disco rígido para que la computadora se vuelva inoperable.</li>
-
-                <li>Infectar una computadora y usarla para atacar a otras.</li>
-
-                <li>Obtener información sobre el usuario, los sitios Web que visita y sus hábitos en la computadora.</li>
-
-                <li>Capturar las conversaciones activando el micrófono o viendo al usuario, con la activación de la Webcam.</li>
-
-                <li>Ejecutar comandos en la computadora como si lo hubiera hecho el usuario.</li>
-
-                <li>Robar archivos del equipo, por ejemplo aquellos con información personal, números de serie (licencia) de programas instalados, etcétera.</li>
-        </ul>
- <div align="center"><img src="images/5.jpg"></div><br>
-        <p><strong>El spam: los correos interminables</strong></p>
-
-        <p>Es muy frecuente recibir en la casilla de correo mensajes de gente desconocida, que brindan información que no solicitamos. Estos mensajes no solicitados (más conocidos como <em>spam</em>) suelen incluir publicidad, y muchas veces contienen información falsa o engañosa. Algunas de las técnicas que utilizan los <a>spammers</a> (aquellos que envían mensajes no solicitados para rédito propio o para terceros), para obtener direcciones válidas de correo electrónico, incluyen:</p>
-
-        <ul>
-                <li>Búsqueda de direcciones en páginas Web y foros.</li>
-
-                <li>Captura de direcciones en cadenas de correo.</li>
-
-                <li>Compra de bases de datos de direcciones de correo.</li>
-
-                <li>Acceso no autorizado en servidores de correo.</li>
-        </ul>
-
-        <p>Por tanto, es conveniente tener en cuenta algunas reglas de comportamiento con respecto a estos envíos de mensajes no solicitados:</p>
-
-        <ul>
-                <li>No dejar la dirección de correo electrónico en cualquier formulario o foro de internet en el que no nos interese participar.</li>
-
-                <li>No responder a los correos no solicitados.</li>
-
-                <li>No enviar respuesta a la dirección que figura, para evitar envíos posteriores.</li>
-
-                <li>Configurar filtros o reglas de mensaje en el programa de correo para filtrar mensajes de determinadas direcciones.</li>
-
-                <li>No configurar respuesta automática para los pedidos de acuse de recibo.</li>
-
-                <li>No responder a los pedidos de acuse de recibo de orígenes dudosos.</li>
-        </ul>
-        <br><br>
-         <div align="center"><img src="images/spam.png"></div><br>
-        <p><strong>Las cadenas de e-mails: el eterno pedido de ayuda</strong></p>
-
-        <p>Una de las técnicas más conocidas para fomentar los reenvíos de mensajes, obtener direcciones de correo y armar bases de datos con ellas es la conocida cadena de correos electrónicos. En estas cadenas se apela a la solidaridad del receptor solicitando el reenvío con fines benéficos; o se advierte sobre ciertas cuestiones, pidiendo que se retransmita el alerta.</p>
-
-        <p>Aunque es conocido que esas cadenas son falsas y tienen intenciones muy distintas de ayudar, por ejemplo, a alguien a operarse, siempre se genera un nuevo tema y en el Asunto del cuerpo del correo suele aparecer la leyenda: Esto es verdad, por favor léelo. Y adultos y adolescentes suelen caer en la trampa.</p>
-
-        <p>Seguro se preguntarán quién hace esto y para qué. Las&nbsp; direcciones de correo electrónico incluidas en los mensajes suelen ser utilizadas para integrar bases de datos, que luego son empleadas para enviar spam. También pueden ser capturadas por virus informáticos, como fuente de direcciones válidas a las cuales reenviarse.</p>
-
-        <p>Es conveniente no reenviar compulsivamente estos mensajes. Este comportamiento suele extenderse porque es común pensar que reenviar un mensaje no tiene costo alguno (en comparación con una llamada telefónica o un envío postal). Sin embargo, debemos pensar que estamos comprometiendo datos de terceros, tiempo propio y de otros destinatarios.</p>
-
-       
-       
-    
-
-     </div>
-           <div data-role="footer">
-                 
-           </div>
-     </div>
-<!--#################### PAGE ####################-->
-<div data-role="page" id="e">
-    <div data-role="header" class="header" data-position="fixed">
-		<h1>capitulo Comomo Navegar Seguros en la red</h1><h3><a href="#prin" data-role="button" data-mini="true">regresar</a></h3>
-		<a href="#panel" id="abre_panel" class="panel-btn"></a>
-	</div>
-	
-	<div data-role="panel" id="panel" data-position-fixed="true" data-position="left" data-display="overlay">
-		<ul data-role="listview">
-			<li data-icon="false"><a href="#b" class="panel_li"	>Capitulo1</a></li>
-			<li data-icon="false"><a href="#c" class="panel_li"	>Capitulo2</a></li>
-			<li data-icon="false"><a href="#d" class="panel_li"	>Capitulo3</a></li>
-			<li data-icon="false"><a href="#e" class="panel_li"	>Capitulo4</a></li>
-			<li data-icon="false"><a href="#f" class="panel_li"	>Capitulo5</a></li>
-		</ul>
-	</div>
-      <div data-role="content" id="content" >
-       
-       <h3>Tema 4. ¿Cómo navegar seguros en la Web?</h3>
-
-        <p><strong>Consejos para navegar seguros en la Web</strong></p>
-
-        <p>Sin ánimo de generar temor, ni crear una idea negativa sobre el uso de internet y las nuevas tecnologías de la comunicación y la información, aquí van algunos consejos básicos para que los padres e hijos puedan disfrutar de la red minimizando riesgos.</p>
-
-        <p>Lo importante es estar atentos a ciertas cuestiones para evitar ser engañados.</p>
-
-        <p>A veces un link (enlace) puede ser engañoso y llevar a un sitio diferente del que figura en el texto del enlace. Para evitar caer en esta trampa, se recomienda, ante la primera impresión de desconfianza:</p>
-
-        <br><br> <div align="center"><img src="images/6.jpg"></div><br>
-        
-        <ol>
-                <li>Verificar el destino de los enlaces con la opción Propiedades (utilizando el botón derecho del mouse) para corroborar que sea el mismo que se menciona en el texto del enlace.</li>
-
-                <li>Evitar acceder a sitios desconocidos o poco confiables, ya que los mismos pueden incluir contenidos que permitan descargar y ejecutar programas maliciosos en nuestra computadora.</li>
-
-                <li>Asegurarse de que el navegador no acepte la instalación de software descargado de internet en forma automática.</li>
-
-                <li>Si se necesita introducir información sensible en un sitio Web, asegurarse de que la página es segura (notar que la dirección Web comience con <strong>https://</strong>).</li>
-
-                <li>Establecer normas para el uso adecuado de las contraseñas, de forma de prevenir que sean vulneradas y utilizadas por intrusos para acceder a los sistemas de forma no autorizada.</li>
-        </ol>
-<br><br> <div align="center"><img src="images/7.jpg"></div><br>
-        <p>Para ello:</p>
-
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cuidar de no ser observados al escribir nuestra clave.</p>
-
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No observar a otros mientras lo hacen.</p>
-
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No escribir la clave en papeles, ni en archivos sin cifrar.</p>
-
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No compartir claves con otros.</p>
-
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No pedir las claves de otros.</p>
-
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No habilitar la opción de recordar claves en los programas que utilicen en equipos compartidos.</p>
-
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No enviar claves por correo electrónico.</p>
-
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No mantener una contraseña indefinidamente (se recomienda cambiarla con cierta regularidad).</p>
-
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No abrir archivos adjuntos de origen desconocido.</p>
-
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No abrir archivos adjuntos que no esperan recibir, aunque les parezca que su origen es conocido.</p>
-
-
-       
-    
-
-     </div>
-           <div data-role="footer">
-                 
-           </div>
-     </div>
-<!--#################### PAGE ####################-->
-<div data-role="page" id="f">
-    <div data-role="header" class="header" data-position="fixed">
-		<h1>Capitulo Dispositivos de Proteccion</h1><h3><a href="#prin" data-role="button" data-mini="true">regresar</a></h3>
-		<a href="#panel" id="abre_panel" class="panel-btn"></a>
-	</div>
-	
-	<div data-role="panel" id="panel" data-position-fixed="true" data-position="left" data-display="overlay">
-		<ul data-role="listview">
-			<li data-icon="false"><a href="#b" class="panel_li"	>Capitulo1</a></li>
-			<li data-icon="false"><a href="#c" class="panel_li"	>Capitulo2</a></li>
-			<li data-icon="false"><a href="#d" class="panel_li"	>Capitulo3</a></li>
-			<li data-icon="false"><a href="#e" class="panel_li"	>Capitulo4</a></li>
-			<li data-icon="false"><a href="#f" class="panel_li"	>Capitulo5</a></li>
-		</ul>
-	</div>
-      <div data-role="content" id="content" >
-        <h3>Tema 5. Dispositivos de protección</h3>
-
-        <p>Aquí les brindamos algunos dispositivos y recursos para proteger la computadora de las principales amenazas externas, sin olvidar que la mejor defensa es la precaución y el conocimiento.</p>
-
-        <p><strong>Firewall, filtros y antivirus</strong></p>
-
-        <p>El <strong>firewall c</strong>onsiste en un sistema diseñado para evitar accesos no autorizados desde o hacia un equipo. Todos los mensajes, códigos o programas que ingresan a la computadora son filtrados por este sistema y&nbsp; pasan a través suyo, al tiempo que son examinados y bloqueados aquellos que no cumplan con determinados criterios de seguridad.</p>
-
-        <p><strong>Los</strong> <strong><a >filtros</a></strong> son programas o configuraciones que permiten restringir el acceso a sitios o contenidos considerados inconvenientes para los más chicos. Estos dispositivos pueden seleccionar contenidos, establecer horarios de uso y ofrecer registros de los sitios visitados.</p>
-
-        <p>De esta manera no hace falta que los padres estén presentes para controlar qué sitios visitan los hijos. Directamente se determinan el tipo de páginas que se pueden ver y se sabe que, al menos en el hogar, no se van a enfrentar con cierto tipo de contenidos.</p>
-
-        <p>Si bien pueden llegar a bloquear páginas que no son adecuadas, muchas veces también impiden la lectura de otros sitios o páginas que son correctas y que tienen información necesaria para los chicos. Otros funcionan a partir de listas que se realizan en los servidores filtro, que son los que deciden qué contenidos son convenientes y cuáles no.</p>
-
-        <p>Nuevamente, no son la opción más recomendable ni pueden reemplazar a la educación sobre uso de la Web ni al acompañamiento.</p>
-
-        <p>Para disminuir las amenazas que presentan los códigos o programas maliciosos, se suele utilizar programas <strong>antivirus</strong>. Sin embargo, es importante resaltar que estos programas no son siempre efectivos, ya que suelen detectar el código malicioso en base a patrones conocidos; es decir que no detectan automáticamente los últimos desarrollos. Por eso es conveniente mantener el antivirus actualizado, aunque no puedan dar garantías totales.</p>
-
-       <br><br> <div align="center"><img src="images/9.jpg"></div><br>
-       
-    
-
-     </div>
-           <div data-role="footer">
-                 
-           </div>
-     </div>
-<!--#################### PAGE ####################-->
-<div data-role="page" id="g">
-    <div data-role="header" class="header" data-position="fixed">
-		<h1>Panel</h1>
-		<a href="#panel" id="abre_panel" class="panel-btn"></a>
-	</div>
-	
-	<div data-role="panel" id="panel" data-position-fixed="true" data-position="left" data-display="overlay">
-		<ul data-role="listview">
-			<li data-icon="false"><a href="#b" class="panel_li"	>Capitulo1</a></li>
-			<li data-icon="false"><a href="#c" class="panel_li"	>Capitulo2</a></li>
-			<li data-icon="false"><a href="#d" class="panel_li"	>Capitulo3</a></li>
-			<li data-icon="false"><a href="#f" class="panel_li"	>Capitulo4</a></li>
-			<li data-icon="false"><a href="#g" class="panel_li"	>Capitulo5</a></li>
-		</ul>
-	</div>
-      <div data-role="content" id="content" >
-       
-       
-       
-    1
-
-     </div>
-           <div data-role="footer">
-                 
-           </div>
-     </div>
-	</body>
+</body>
 </html>
